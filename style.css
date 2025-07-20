@@ -1,0 +1,1042 @@
+:root {
+    --primary-blue: #0055A4;
+    --primary-orange: #F37021;
+    --dark-text: #1a202c;
+    --light-text: #4a5568;
+    --background-light: #f7fafc;
+    --background-white: #FFF8F0;
+    --border-color: #e2e8f0;
+    --footer-color: #4A2511;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--dark-text);
+    background-color: var(--background-light);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.container1 .btn2 {
+    border-color: #1a202c;
+    color: #1a202c;
+    padding: 0.7rem 1rem;
+    border-radius: 50px;
+    font-weight: 650;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.container .btn2 i {
+    margin-right: 0.4rem;
+}
+
+.nav-actions .btn2:hover {
+    background-color: #e2e8f0;
+    color: black;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+.btn3 {
+    display: block;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.9rem 7rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    margin-left: -1.5rem;
+    white-space: nowrap;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+    color: var(--dark-text);
+    line-height: 0.7;
+}
+
+h1 {
+    font-size: 1.7rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    color: var(--light-text);
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    max-width: 600px;
+}
+
+.grid {
+    display: flex;
+    gap: 2rem;
+}
+
+.hero {
+    display: flex;
+    min-height: 100vh;
+    padding: 0;
+    align-items: center;
+    position: relative;
+    margin-top: -6.8rem;
+}
+
+.hero-image {
+    width: 73%;
+    height: 70vh;
+    position: static;
+    top: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.hero-content {
+    width: 27%;
+    padding: 2rem 4rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-orange {
+    background-color: var(--primary-orange);
+    border-color: var(--primary-orange);
+    color: white;
+}
+
+.btn-orange:hover {
+    background-color: #d8601c;
+    border-color: #d8601c;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--primary-orange);
+    color: var(--primary-orange);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-orange);
+    color: white;
+}
+
+.card {
+    background-color: var(--background-white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+header {
+    background-color: var(--background-white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin: 0 2rem;
+}
+
+.logo-container img {
+    height: 40px;
+    display: block;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero {
+    background-color: var(--background-white);
+}
+
+.hero .grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-content .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.appointment-form {
+    padding: 1.5rem;
+    margin-top: -1rem;
+}
+
+.appointment-form h3 {
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    margin-left: -2rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px;
+    padding-right: 12rem;
+    border: 1px solid var(--border-color);
+    border-radius: 3.125rem;
+    font-size: 1rem;
+}
+
+.appointment-form .btn {
+    width: 100%;
+    padding: 0.8rem 0;
+    justify-content: center;
+}
+
+.form-terms {
+    font-size: 0.75rem;
+    color: #718096;
+    margin-top: 0.5rem;
+}
+
+.hero-content h1 {
+    line-height: 1.2;
+}
+
+.stats-bar {
+    position: absolute;
+    bottom: 3.9rem;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(255, 247, 240, 0.9);
+    padding: 1rem 0;
+    border-top: 1px solid #fdecdf;
+}
+
+.stats-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #8c5a2b;
+}
+
+.stat-item i {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.stat-item span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.stat-item b {
+    color: #F37021;
+    font-weight: 800;
+}
+
+.treatments .grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.treatment-card {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.treatment-card img {
+    width: 16rem;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.treatment-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.section-subtitle {
+    text-align: center;
+    max-width: 600px;
+    margin: -1rem auto 2rem auto;
+}
+
+.treatment-info p {
+    font-size: 0.8rem;
+}
+
+.btn4 {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.transformations-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    letter-spacing: -0.5px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-items: center;
+}
+
+.testimonial-item {
+    text-align: center;
+    max-width: 320px;
+    padding-right: 0.7rem;
+}
+
+.before-after {
+    margin-bottom: 20px;
+}
+
+.photo-container {
+    display: flex;
+    gap: 10px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.before-photo {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.before-photo:hover {
+    transform: scale(1.02);
+}
+
+.patient-info {
+    margin-top: 15px;
+}
+
+.patient-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.patient-location {
+    font-size: 1rem;
+    color: #e67e22;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.why-choose-us-section {
+    padding: 4rem 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.section-header p {
+    font-size: 1.125rem;
+    color: #475569;
+    max-width: 42rem;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.features-list {
+    flex: 1;
+    min-width: 300px;
+}
+
+.features-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.features-list li {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.feature-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.elaboration {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: max-height 0.4s ease-in-out, padding-top 0.4s ease-in-out;
+    color: #475569;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.plus-icon {
+    color: #f97316;
+    font-size: 1.75rem;
+    font-weight: 300;
+    padding-left: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.features-list li.active .elaboration {
+    max-height: 200px;
+    padding-top: 1rem;
+}
+
+.features-list li.active .plus-icon {
+    transform: rotate(45deg);
+}
+
+.image-wrapper {
+    flex: 1;
+    min-width: 300px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    display: block;
+}
+
+.patient-reviews-section {
+    padding: 4rem 0;
+}
+
+.reviews-gallery {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.patient-card {
+    flex: 0 0 220px;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.patient-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.1);
+}
+
+.patient-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.patient-info {
+    padding: 1rem;
+}
+
+.patient-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.patient-treatment {
+    color: #f97316;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin: 0.25rem 0;
+    min-height: 1.2em;
+}
+
+.patient-location {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #e2e8f0;
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #94a3b8;
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+.transformations-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.transformation-card {
+    flex: 0 0 300px;
+    min-width: 300px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.transformation-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border-color: #f1822f;
+}
+
+.transformation-image {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #f1822f 0%, #d66b14 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+.image-placeholder::before {
+    content: 'Before & After';
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.patient-info {
+    padding: 20px 15px 25px 15px;
+    text-align: left;
+    background-color: #fafafa;
+    border-top: 3px solid #f1822f;
+}
+
+.patient-info h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #333;
+    text-align: center;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 5px 0;
+}
+
+.info-label {
+    font-size: 0.85rem;
+    color: #666;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.treatment {
+    display: inline-block;
+    color: #f1822f;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: #fff;
+    padding: 3px 8px;
+    border-radius: 12px;
+    border: 1px solid #f1822f;
+}
+
+.location {
+    display: inline-block;
+    color: #555;
+    font-size: 0.95rem;
+    font-weight: 500;
+    background-color: #fff;
+    padding: 3px 8px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+.transformations-gallery::-webkit-scrollbar {
+    height: 8px;
+}
+
+.transformations-gallery::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.transformations-gallery::-webkit-scrollbar-thumb {
+    background: #f1822f;
+    border-radius: 10px;
+}
+
+.transformations-gallery::-webkit-scrollbar-thumb:hover {
+    background: #d66b14;
+}
+
+.testimonials {
+    background-color: var(--background-white);
+}
+
+.testimonials .grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.testimonial-card .author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-info .name {
+    font-weight: 600;
+    margin: 0;
+}
+
+.author-info .treatment {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    margin: 0;
+}
+
+.innovation {
+    background-color: var(--background-white);
+}
+
+.innovation .grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.innovation-card {
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.innovation-card img {
+    width: 15rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.learn-more-link {
+    color: var(--primary-orange);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.innovation-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    gap: 1.5rem;
+    align-items: start;
+    justify-items: space-evenly;
+}
+
+.Locations {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.locations h3 {
+    font-size: 1.2rem;
+}
+
+.locations p {
+    font-size: 0.9rem;
+}
+
+.location-card {
+    padding: 0.5rem;
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.faq {
+    background-color: var(--background-white);
+}
+
+.faq-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--border-color);
+    border-top: 1px solid var(--border-color);
+    padding: 1.5rem 2.5rem;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.faq-icon {
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    color: var(--primary-orange);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding-top 0.3s ease-out;
+}
+
+.faq-answer p {
+    margin: 0;
+    padding-top: 0;
+}
+
+.faq-item.open .faq-answer {
+    max-height: 200px;
+    padding-top: 1rem;
+}
+
+.faq-item.open .faq-icon {
+    transform: rotate(45deg);
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.site-footer {
+    background-color: #4A2511;
+    color: var(--background-white);
+    padding: 2rem 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-nav a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #ffffff;
+}
+
+.footer-divider {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    margin: 1rem 0;
+}
+
+.copyright-text p {
+    font-size: 0.875rem;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+    .footer-right {
+        align-items: flex-end;
+        max-width: 60%;
+    }
+
+    .footer-nav {
+        justify-content: flex-end;
+    }
+
+    .copyright-text {
+        text-align: right;
+    }
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image {
+        order: 1;
+    }
+
+    .hero-content {
+        order: 2;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .appointment-form {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .treatments .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .innovation .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .innovation-card img {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .why-choose-us .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    /* .feature-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    } */
+    .testimonials .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .locations .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-actions .btn-outline span {
+        display: none;
+    }
+
+    .nav-actions .btn-outline {
+        padding: 12px;
+    }
+
+    .form-group {
+        grid-template-columns: 1fr;
+    }
+
+    .treatment-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .why-choose-us .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .locations .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer .grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-socials {
+        justify-content: center;
+    }
+}
