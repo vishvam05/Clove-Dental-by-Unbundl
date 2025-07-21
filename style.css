@@ -310,6 +310,14 @@ nav {
     display: flex;
     gap: 1.5rem;
     align-items: center;
+    background-color: white;
+    border: 2px solid gainsboro ;
+    transition-duration: 0.2s;
+}
+.treatment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-orange);
 }
 
 .treatment-card img {
@@ -382,13 +390,6 @@ nav {
     margin-bottom: 20px;
 }
 
-.photo-container {
-    display: flex;
-    gap: 10px;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-}
 
 .before-photo {
     width: 100%;
@@ -518,6 +519,7 @@ nav {
 
 .patient-reviews-section {
     padding: 4rem 0;
+
 }
 
 .reviews-gallery {
@@ -751,9 +753,7 @@ nav {
     margin: 0;
 }
 
-.innovation {
-    background-color: var(--background-white);
-}
+
 
 .innovation .grid {
     grid-template-columns: repeat(3, 1fr);
@@ -762,6 +762,14 @@ nav {
 .innovation-card {
     text-align: center;
     padding-bottom: 1.5rem;
+    background-color: white;
+    border: 2px solid gainsboro;
+    transition-duration:0.2s ;
+}
+.innovation-card:hover {
+ transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-orange);
 }
 
 .innovation-card img {
@@ -795,27 +803,52 @@ nav {
     gap: 0.5rem;
 }
 
+
 .locations h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+    padding:0.1rem;
 }
 
 .locations p {
     font-size: 0.9rem;
+    text-align: left;
 }
 
 .location-card {
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+    width: 12rem;
     padding: 0.5rem;
+    background-color: white;
+    border: 3px solid gainsboro;
+    box-shadow: none;
+    border-radius: 10px;
+    transition-duration: 0.2s;
 }
+.location-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-orange);
+}
+.location-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+}
 .images img {
     width: 100%;
     height: auto;
     display: block;
 }
-
-.faq {
-    background-color: var(--background-white);
+.location-card img{
+    padding-right: 0.5rem;
 }
+
+
 
 .faq-container {
     display: grid;
@@ -864,9 +897,7 @@ nav {
     padding-top: 1rem;
 }
 
-.faq-item.open .faq-icon {
-    transform: rotate(45deg);
-}
+
 
 .content {
     flex-grow: 1;
@@ -995,9 +1026,9 @@ nav {
         grid-template-columns: 1fr;
     }
 
-    .locations .grid {
+    /* .locations .grid {
         grid-template-columns: repeat(3, 1fr);
-    }
+    } */
 
     footer .grid {
         grid-template-columns: 1fr 1fr;
